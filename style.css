@@ -1,3 +1,12 @@
+
+/************************************ main landing css ****************************************/
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -65,4 +74,62 @@ nav {
   font-size: 24px;
   color: white;
   margin: 0 10px;
+}
+
+
+/************************************ project css ****************************************/
+
+
+.projects-section {
+  padding: 60px 40px;
+  background-color: #f8f8f8;
+  color: #333;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  max-width: 300px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-icon {
+  font-size: 36px;
+  color: #4b6cb7;
+  margin-bottom: 10px;
+}
+
+.project-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #4b6cb7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.project-btn:hover {
+  background-color: #3752a6;
 }
